@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-Parser");
+const bodyParser = require("body-parser");
 app.use(express.static(__dirname + "/Views")); //use css for loading
 app.use(bodyParser.urlencoded({extended: true})); // use for post method on html
 app.set("view engine", "ejs"); //define of EJS : Views folder :
