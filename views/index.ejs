@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Check the weekday!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id=heading class="box">
+    <h1 id=heading><%=date%></h1>
+    <h1>The Type List is <%=page%></h1>
+  </div>
+  <div class="box">
+    <% for (var i = 0; i < newitem.length; i++) { %>
+    <div class="item">
+      <input class="check" type="checkbox">
+      <p class=item><%= newitem[i] %></p>
+    </div>
+    <% }  %>
+    <form class="item" action="/" method="POST">
+      <input class=input11 type="text" name="newtodo" placeholder="New Item" autocomplete="off">
+      <button type="submit" name="list" value=<%=page %>>+</button>
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
